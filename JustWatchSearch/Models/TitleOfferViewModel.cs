@@ -12,7 +12,10 @@ public class TitleOfferViewModel
 	public decimal NormalizedPrice { get; init; }
 	public string? PresentationType => OfferDetails?.PresentationType;
 	public string? MonetizationType => OfferDetails?.MonetizationType;
-
+	public string? SubtitleLanguages => 
+		OfferDetails?.SubtitleLanguages != null 
+			? string.Join(", ", OfferDetails.SubtitleLanguages.OrderBy(lang => lang)) 
+			: null;
 	public OfferDetails OfferDetails { get; set; }
 
 

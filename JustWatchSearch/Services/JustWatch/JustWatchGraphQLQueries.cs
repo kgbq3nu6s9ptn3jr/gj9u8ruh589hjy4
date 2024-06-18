@@ -108,6 +108,7 @@ fragment SearchTitleGraphql on PopularTitlesEdge {
       fullPath
       originalReleaseYear
       originalReleaseDate
+      productionCountries
       runtime
       shortDescription
       genres {
@@ -150,6 +151,7 @@ query GetTitleNode(
       fullPath
       originalReleaseYear
       originalReleaseDate
+      productionCountries
       runtime
       shortDescription
       genres {

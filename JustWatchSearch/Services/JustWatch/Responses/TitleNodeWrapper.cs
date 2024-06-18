@@ -35,6 +35,9 @@ public class TitleNode
 		[JsonPropertyName("originalReleaseDate")]
 		public string? OriginalReleaseDate { get; set; }
 
+		[JsonPropertyName("productionCountries")]
+		public List<string>? ProductionCountries { get; set; }
+
 		[JsonPropertyName("runtime")]
 		public int Runtime { get; set; }
 

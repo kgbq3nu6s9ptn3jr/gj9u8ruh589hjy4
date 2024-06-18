@@ -28,6 +28,7 @@
 						<th>Type</th>
 						<th>Title</th>
 						<th>Release</th>
+						<th>Countries</th>
 						<th>IMDB</th>
 						<th></th>
 					</tr>
@@ -39,6 +40,9 @@
 							<td>@title?.Node?.ObjectType</td>
 							<td>@title?.Node?.Content?.Title</td>
 							<td>@title?.Node?.Content?.OriginalReleaseYear</td>
+							<td>
+								@(string.Join(", ", title?.Node?.Content?.ProductionCountries))
+							</td>
 							<td>
 								@if (!string.IsNullOrEmpty(title?.Node?.Content?.ExternalIds?.ImdbId))
 								{
