@@ -16,6 +16,10 @@ public class TitleOfferViewModel
 		OfferDetails?.SubtitleLanguages != null 
 			? string.Join(", ", OfferDetails.SubtitleLanguages.OrderBy(lang => lang)) 
 			: null;
+	public string? AudioLanguages => 
+		OfferDetails?.AudioLanguages != null 
+			? string.Join(", ", OfferDetails.AudioLanguages.OrderBy(lang => lang)) 
+			: null;
 	public OfferDetails OfferDetails { get; set; }
 
 
