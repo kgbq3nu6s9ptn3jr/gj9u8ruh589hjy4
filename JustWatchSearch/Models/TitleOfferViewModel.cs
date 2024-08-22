@@ -10,7 +10,7 @@ public class TitleOfferViewModel
 	public string? RetailPrice => OfferDetails?.RetailPrice;
 	public decimal? RetailPriceValue => OfferDetails?.RetailPriceValue;
 	public decimal NormalizedPrice { get; init; }
-	public string? PresentationType => OfferDetails?.PresentationType;
+	public string? PresentationType => OfferDetails?.PresentationType.Replace("_4K", "UHD");
 	public string? MonetizationType => OfferDetails?.MonetizationType;
 	public string? SubtitleLanguages => 
 		OfferDetails?.SubtitleLanguages != null 
