@@ -32,7 +32,8 @@ public static class JustWatchGraphQLQueries
 			{
 				searchTitlesFilter = new
 				{
-					searchQuery = input
+					searchQuery = input,
+          includeTitlesWithoutUrl = true
 				},
 				country = country,
 				language = "en",
