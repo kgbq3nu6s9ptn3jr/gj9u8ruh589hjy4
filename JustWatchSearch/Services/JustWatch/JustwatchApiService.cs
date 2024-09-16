@@ -22,7 +22,6 @@ public partial class JustwatchApiService : IJustwatchApiService
         {
 			"https://cors.jugorder.de/",
 			"https://cors-anywhere.ammoapps.com/",
-			"https://cors.ow3.cn/",
 			"https://cors.svaren.dev/",
 			"https://your-cors.herokuapp.com/",
 			"https://cors.mcpsystem.com/",
