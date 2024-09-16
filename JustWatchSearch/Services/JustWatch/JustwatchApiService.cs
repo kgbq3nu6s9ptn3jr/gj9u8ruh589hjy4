@@ -36,7 +36,7 @@ public partial class JustwatchApiService : IJustwatchApiService
         };
         var random = new Random();
         var corsProxy = corsProxies[random.Next(corsProxies.Length)];
-		_baseAddress = $"{corsProxy}https://apis.justwatch.com/graphql";
+		_baseAddress = $"{corsProxy}https://apis.justwatch.com";
 		_graphQLClient = new GraphQLHttpClient($"{_baseAddress}/graphql", new SystemTextJsonSerializer());
 	}
 
