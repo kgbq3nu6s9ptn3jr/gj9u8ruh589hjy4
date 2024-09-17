@@ -52,8 +52,10 @@
 								}
 							</td>
 							<td>
-								<Button class="btn btn-primary" @onclick="() => OpenMovie(title?.Node)">Prices</Button> <a class="btn btn-primary" target="_blank"
-																											   href="@($"https://justwatch.com{title?.Node?.Content?.FullPath}")">
+								<Button class="btn btn-primary" @onclick="() => OpenMovie(title?.Node)">Prices</Button>
+								 <a class="btn btn-primary" target="_blank"
+									href="@($"https://justwatch.com{title?.Node?.Content?.FullPath}")"
+									disabled="@(string.IsNullOrEmpty(title?.Node?.Content?.FullPath))">
 									Justwatch
 								</a>
 							</td>
