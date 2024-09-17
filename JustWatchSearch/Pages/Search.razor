@@ -30,6 +30,7 @@
 						<th>Release</th>
 						<th>Countries</th>
 						<th>IMDB</th>
+						<th>TMDB</th>
 						<th></th>
 					</tr>
 				</thead>
@@ -48,6 +49,14 @@
 								{
 									<a href="https://www.imdb.com/title/@title.Node.Content.ExternalIds.ImdbId" target="_blank">
 										@title.Node.Content.ExternalIds.ImdbId
+									</a>
+								}
+							</td>
+							<td>
+								@if (!string.IsNullOrEmpty(title?.Node?.Content?.ExternalIds?.tmdbId))
+								{
+									<a href="https://www.themoviedb.org/@title?.Node?.ObjectType.ToLower().Replace("show", "tv")/@title.Node.Content.ExternalIds.tmdbId" target="_blank">
+										@title.Node.Content.ExternalIds.tmdbId
 									</a>
 								}
 							</td>
