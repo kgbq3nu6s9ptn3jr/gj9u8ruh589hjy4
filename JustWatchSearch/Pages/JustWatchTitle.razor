@@ -44,11 +44,7 @@
 						FilterOperator="FilterOperator.Equals">
 				@context.PresentationType
 			</GridColumn>
-			<GridColumn TItem="TitleOfferViewModel" HeaderText="Technology"
-						PropertyName="VideoTechnology" PropertyName="AudioTechnology">
-				@context.VideoTechnology
-				@context.AudioTechnology
-			</GridColumn>
+
 			<GridColumn TItem="TitleOfferViewModel" HeaderText="Monetization Type"
 						PropertyName="MonetizationType"
 						SortKeySelector="item => item.MonetizationType">
